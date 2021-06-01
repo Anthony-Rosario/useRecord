@@ -19,10 +19,10 @@ describe('App component', () => {
 
     const undo = screen.getByLabelText('undo');
     fireEvent.click(undo);
-    expect(colorPicker.value).toBe('#FC0303');
+    expect(colorPicker.value).toBe('#fc0303');
     
     const redo = screen.getByLabelText('redo');
     fireEvent.click(redo);
-    expect(colorPicker.value).toBe('#037BFC');
+    expect(colorPicker.value).toBe('#037bfc');
   });
 });
